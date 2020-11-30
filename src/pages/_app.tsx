@@ -3,6 +3,8 @@ import { AppProps } from 'next/app';
 import { GlobalStyle } from '../styles/GlobalStyle';
 import Head from 'next/head';
 import { config } from '../config';
+import { pageview } from '../lib/gtag';
+import { useRouter } from 'next/dist/client/router';
 
 const url = 'https://1st-anniversary.zero3.me';
 const title = '0:00 1周年記念特設サイト | 0:00 [ゼロスリー]';
@@ -11,6 +13,8 @@ const description =
 const ogp = 'https://assets.zero3.me/resources/client/general/ogp.jpg';
 
 const MyApp = ({ Component, pageProps }: AppProps): ReactElement => {
+  const router = useRouter();
+
   useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
@@ -18,6 +22,16 @@ const MyApp = ({ Component, pageProps }: AppProps): ReactElement => {
       jssStyles.parentElement?.removeChild(jssStyles);
     }
   }, []);
+
+  useEffect(() => {
+    const handleRouteChange = (url: string): void => {
+      pageview(url);
+    };
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
 
   return (
     <>
