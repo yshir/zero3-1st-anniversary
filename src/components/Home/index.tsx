@@ -11,24 +11,26 @@ const Component: React.FC<IProps> = ({ className }) => (
   <div className={className}>
     <div className="hero">
       <figure>
-        <Image src="/assets/images/hero.png" alt="Hero image" height={600} width={800} quality={100} />
+        <Image src="/assets/images/hero.png" alt="Hero image" height={450} width={600} quality={100} />
       </figure>
     </div>
 
     <div className="message">
       <h2 className="title font-family-en1">
-        <span>Thank you</span>
-        <span>Anniversary</span>
+        <span>Thank you for</span>
+        <span>the 1st Anniversary</span>
       </h2>
       <div className="content">
         <div className="text">
-          <p>テキストテキスト</p>
-          <p>テキストテキストテキストテキスト、</p>
-          <p>テキストテキストテキスト。テキスト</p>
+          <p>ガラスの靴がぴったりとおさまるような瞬間を</p>
+          <p>身につけた瞬間にときめきに満たされるような、そんなアクセサリーをお届けして366日。</p>
           <p>&nbsp;</p>
-          <p>テキストテキスト</p>
-          <p>テキストテキストテキストテキストテキスト、</p>
-          <p>テキストテキストテキスト。</p>
+          <p>0:00は2020年に12月30日に1周年を迎えます。</p>
+          <p>&nbsp;</p>
+          <p>0:00を過ぎても解けることのない魔法をアクセサリーにこめて、たくさんの方にお届けしてきました。</p>
+          <p>この1年の間、0:00は多くのお客様に支えられコラボ商品の制作や、渋谷でのポップアップショップ出店などをすることができました。</p>
+          <p>&nbsp;</p>
+          <p>これからもときめきに溢れた童話の世界をお届けしていきます。</p>
         </div>
         <figure className="image">
           <Image src="/assets/images/crystal.png" alt="Crystal image" height={360} width={360} quality={100} />
@@ -49,13 +51,10 @@ const Component: React.FC<IProps> = ({ className }) => (
       </h2>
       <div className="content">
         <div className="text">
-          <p>テキストテキスト</p>
-          <p>テキストテキストテキストテキスト、</p>
-          <p>テキストテキストテキスト。テキスト</p>
-          <p>&nbsp;</p>
-          <p>テキストテキスト</p>
-          <p>テキストテキストテキストテキストテキスト、</p>
-          <p>テキストテキストテキスト。</p>
+          <p>1周年を迎えられたのは、支えてくださるお客様のおかげです。</p>
+          <p>たくさんの感想や喜びの声、いつも1つ1つ読ませていただいております。</p>
+          <p>いつも応援してくださるみなさまに、心より感謝を込めて4つのアニバーサリーキャンペーンを用意いたしました。</p>
+          <p>みなさまのもとへいつまでも解けない魔法が届きますように。</p>
         </div>
         <figure className="image">
           <Image src="/assets/images/crystal.png" alt="Crystal image" height={360} width={360} quality={100} />
@@ -71,9 +70,10 @@ const Component: React.FC<IProps> = ({ className }) => (
         <p className="subtitle font-family-en1">Campaign 1</p>
         <h3 className="title font-family-ja2">限定アイテム</h3>
         <div className="text font-family-ja2">
-          <p>1stアニバーサリー限定のアイテムが登場</p>
+          <p>1stアニバーサリー限定のアイテムが登場。</p>
           <p>今回だけの特別デザインや、</p>
-          <p>期間限定でイニシャルを入れることができるアイテムも。</p>
+          <p>期間限定でイニシャルを入れることができる</p>
+          <p>アクセサリーをお届けします。</p>
         </div>
         <div className="link">
           <a className="active" href="#">
@@ -91,8 +91,9 @@ const Component: React.FC<IProps> = ({ className }) => (
         <p className="subtitle font-family-en1">Campaign 2</p>
         <h3 className="title font-family-ja2">限定童話セット</h3>
         <div className="text font-family-ja2">
-          <p>同じ童話シリーズのアイテムを複数購入すると、</p>
-          <p>限定ノベルティとしてベロア巾着と童話ごとにカラーの異なるリングをプレゼント。</p>
+          <p>同じ童話シリーズのアイテムを2点以上購入すると、</p>
+          <p>限定ノベルティとしてベロア巾着と</p>
+          <p>童話ごとにカラーの異なるリングをプレゼント。</p>
         </div>
         <div className="link">
           <span className="disable">COMING SOON</span>
@@ -127,8 +128,8 @@ const Component: React.FC<IProps> = ({ className }) => (
         <h3 className="title font-family-ja2">SNSキャンペーン</h3>
         <div className="text font-family-ja2">
           <p>日頃の感謝を込めてSNSキャンペーンを開催。</p>
-          <p>簡単な応募でプレゼントがあたるチャンス。</p>
-          <p>詳細は各SNSから御覧ください。</p>
+          <p>簡単な応募でプレゼントがあたるチャンスです。</p>
+          <p>詳細は各SNSからご覧ください。</p>
         </div>
         <div className="link">
           <span className="disable">COMING SOON</span>
@@ -169,7 +170,7 @@ export const Home = styled(Component)`
     margin: 0 var(--side-margin) 64px;
     > .title {
       color: #545454;
-      font-size: 30px;
+      font-size: 28px;
       line-height: 40px;
       letter-spacing: 0.05em;
       margin-bottom: 40px;
@@ -233,6 +234,7 @@ export const Home = styled(Component)`
       > .link {
         > a,
         span {
+          cursor: pointer;
           &.active {
             background-color: #c0dae9;
             color: #fff;
@@ -241,6 +243,7 @@ export const Home = styled(Component)`
             }
           }
           &.disable {
+            cursor: not-allowed;
             background-color: #ccc;
             color: #fff;
           }
@@ -280,14 +283,14 @@ export const Home = styled(Component)`
     margin: 0 auto;
 
     > .hero {
-      margin-bottom: 150px;
+      margin: 120px 0;
     }
 
     > .message {
       margin-bottom: 150px;
       > .title {
-        font-size: 54px;
-        line-height: 80px;
+        font-size: 48px;
+        line-height: 96px;
         > span {
           display: inline;
           ::after {
