@@ -18,7 +18,7 @@ const Component: React.FC<IProps> = ({ className }) => (
     <div className="message">
       <h2 className="title font-family-en1">
         <span>Thank you for</span>
-        <span>the 1st Anniversary</span>
+        <span>1st Anniversary</span>
       </h2>
       <div className="content">
         <div className="text">
