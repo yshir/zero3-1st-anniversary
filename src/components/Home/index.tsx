@@ -76,7 +76,7 @@ const Component: React.FC<IProps> = ({ className }) => (
           <p>アクセサリーをお届けします。</p>
         </div>
         <div className="link">
-          <a className="active" href="#">
+          <a className="active" href="https://zero3.me/posts/f6e5cf9a-ea83-4098-a9a9-91bde5961c59">
             詳しく見る
           </a>
         </div>
@@ -96,7 +96,9 @@ const Component: React.FC<IProps> = ({ className }) => (
           <p>童話ごとにカラーの異なるリングをプレゼント。</p>
         </div>
         <div className="link">
-          <span className="disable">COMING SOON</span>
+          <a className="active" href="https://zero3.me/posts/7313f95a-90f7-4e5e-9199-9fcf645143b7">
+            詳しく見る
+          </a>
         </div>
       </div>
     </div>
