@@ -211,6 +211,8 @@ export const Home = styled(Component)`
   }
 
   > .campaign {
+    position: relative;
+    z-index: 1;
     margin: 0 var(--side-margin) 96px;
     > figure {
       margin: 0 24px 48px;
