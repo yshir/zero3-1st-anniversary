@@ -136,7 +136,9 @@ const Component: React.FC<IProps> = ({ className }) => (
           <p>詳細は各SNSからご覧ください。</p>
         </div>
         <div className="link">
-          <span className="disable">COMING SOON</span>
+          <a className="active" href="https://zero3.me/posts/b6840acf-3306-4679-8584-c41fcf8a8425">
+            詳しく見る
+          </a>
         </div>
       </div>
     </div>
